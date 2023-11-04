@@ -2,12 +2,12 @@ import { View, Text } from 'react-native';
 import React from 'react';
 import { SafeAreaView } from "react-native-safe-area-context";
 
-const Profile = () => {
+const Cart = () => {
   return (
     <SafeAreaView>
-      <Text>Profile</Text>
+        <Text>Cart Page</Text>
     </SafeAreaView>
   )
 }
 
-export default Profile
+export default Cart
