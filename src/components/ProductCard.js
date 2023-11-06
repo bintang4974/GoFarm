@@ -2,10 +2,13 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 import { Box, HStack, Heading, Image, VStack, Text } from 'native-base';
 import React, { useState } from 'react';
 import Gap from "./Gap";
+import { TouchableOpacity } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 const ProductCard = ({ item }) => {
+    const navigation = useNavigation();
     return (
-        <Box>
+        <TouchableOpacity onPress={() => navigation.navigate('DetailProduct')}>
             <Box height={150} width={190} p={2}>
                 <Image
                     source={{ uri: item.image }}
@@ -23,7 +26,7 @@ const ProductCard = ({ item }) => {
                 </HStack>
             </Box>
             <Gap height={40} />
-        </Box>
+        </TouchableOpacity>
     )
 }
 

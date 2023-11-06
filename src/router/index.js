@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
-import { Cart, Home, Profile } from '../screens';
+import { Cart, DetailProduct, Home, Message, Profile } from '../screens';
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { Text } from 'native-base';
 
@@ -75,6 +75,16 @@ const Router = () => {
             <Stack.Screen
                 name="MainApp"
                 component={MainApp}
+                options={{ headerShown: false }}
+            />
+            <Stack.Screen
+                name="DetailProduct"
+                component={DetailProduct}
+                options={{ headerShown: false }}
+            />
+            <Stack.Screen
+                name="Message"
+                component={Message}
                 options={{ headerShown: false }}
             />
         </Stack.Navigator>
