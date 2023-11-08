@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
-import { Cart, DetailProduct, Home, Message, Profile } from '../screens';
+import { Cart, Chat, DetailProduct, Home, Message, Profile } from '../screens';
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { Text } from 'native-base';
 
@@ -58,6 +58,11 @@ const MainApp = () => {
             <Tab.Screen
                 name="Cart"
                 component={Cart}
+                options={{ headerShown: false }}
+            />
+            <Tab.Screen
+                name="Chat"
+                component={Chat}
                 options={{ headerShown: false }}
             />
             <Tab.Screen

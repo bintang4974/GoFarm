@@ -3,5 +3,6 @@ import Profile from "./Profile";
 import Cart from "./Cart";
 import DetailProduct from "./DetailProduct";
 import Message from "./Message";
+import Chat from "./Chat";
 
-export { Home, Profile, Cart, DetailProduct, Message };
+export { Home, Profile, Cart, DetailProduct, Message, Chat };
