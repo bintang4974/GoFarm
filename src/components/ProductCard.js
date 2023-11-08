@@ -7,8 +7,9 @@ import { useNavigation } from "@react-navigation/native";
 
 const ProductCard = ({ item }) => {
     const navigation = useNavigation();
+    console.log("item: ", item)
     return (
-        <TouchableOpacity onPress={() => navigation.navigate('DetailProduct')}>
+        <TouchableOpacity onPress={() => navigation.navigate('DetailProduct', {item: item})}>
             <Box height={150} width={190} p={2}>
                 <Image
                     source={{ uri: item.image }}

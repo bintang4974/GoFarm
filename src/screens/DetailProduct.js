@@ -2,21 +2,27 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 import { HStack, Heading, Image, VStack, Text, Box } from 'native-base';
 import React from 'react';
 import { SafeAreaView } from "react-native-safe-area-context";
-import { HeaderDetail } from '../components';
+import { FooterDetail, HeaderDetail } from '../components';
+import { View } from "react-native";
 
-const DetailProduct = () => {
+const DetailProduct = ({route}) => {
+  const params = route.params.item
+  // const { item } = route.params;
+
+  console.log(params)
+
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{flex: 1}}>
       <HeaderDetail title="Details" />
       <Image
         source={{ uri: 'https://spi.or.id/wp-content/uploads/2016/06/IMG_20160430_204305.jpg' }}
-        height={220}
+        height={250}
         width={"100%"}
         alt='slider'
       />
       <HStack justifyContent={"space-between"} p={3}>
         <VStack>
-          <Heading size="md">Skin oil Serum</Heading>
+          <Heading size="md">{params.name}</Heading>
           <HStack alignItems={"center"}>
             <Ionicons name='star-half-outline' size={18} />
             <Heading size={"sm"} ml={2} mr={3}>4.9</Heading>
@@ -33,7 +39,9 @@ const DetailProduct = () => {
       <Box p={3}>
         <Text bold color={"coolGray.600"}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</Text>
       </Box>
-      
+      <View style={{ position: 'absolute', left: 0, right: 0, bottom: 0 }}>
+        <FooterDetail />
+      </View>
     </SafeAreaView>
   )
 }
