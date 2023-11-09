@@ -5,6 +5,7 @@ const dummyProducts = [
         name: 'Product 1',
         description: 'Description for Product 1',
         price: 19.99,
+        category: 'gula'
     },
     {
         id: 2,
@@ -12,6 +13,7 @@ const dummyProducts = [
         name: 'Product 2',
         description: 'Description for Product 2',
         price: 24.99,
+        category: 'gula'
     },
     {
         id: 3,
@@ -19,6 +21,7 @@ const dummyProducts = [
         name: 'Product 3',
         description: 'Description for Product 3',
         price: 15.99,
+        category: 'kakao'
     },
     {
         id: 4,
@@ -26,6 +29,7 @@ const dummyProducts = [
         name: 'Product 4',
         description: 'Description for Product 4',
         price: 29.99,
+        category: 'kakao'
     },
     {
         id: 5,
@@ -33,6 +37,7 @@ const dummyProducts = [
         name: 'Product 5',
         description: 'Description for Product 5',
         price: 39.99,
+        category: 'jamur'
     },
     {
         id: 6,
@@ -40,6 +45,7 @@ const dummyProducts = [
         name: 'Product 6',
         description: 'Description for Product 6',
         price: 22.99,
+        category: 'jamur'
     },
     {
         id: 7,
@@ -47,6 +53,7 @@ const dummyProducts = [
         name: 'Product 7',
         description: 'Description for Product 7',
         price: 17.99,
+        category: 'empon'
     },
     {
         id: 8,
@@ -54,6 +61,7 @@ const dummyProducts = [
         name: 'Product 8',
         description: 'Description for Product 8',
         price: 45.99,
+        category: 'empon'
     },
     {
         id: 9,
@@ -61,6 +69,7 @@ const dummyProducts = [
         name: 'Product 9',
         description: 'Description for Product 9',
         price: 12.99,
+        category: "kakao"
     },
     {
         id: 10,
