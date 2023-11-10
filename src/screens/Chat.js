@@ -80,12 +80,12 @@ const Messages = () => {
     return (
         <SafeAreaView>
             <Box backgroundColor="#77DD77"
-                borderBottomRadius={35}
+                borderBottomRadius={50}
                 width={420}
                 height={140}
                 shadow={5}>
                 <Text bold fontSize="3xl" color="white" marginLeft="3" marginTop="4">Messages</Text>
-                <Input height={10} marginLeft={2} borderRadius={35} width={390} marginTop="3" variant="outline" backgroundColor={"#3DB661"} placeholder="Search..." />
+                <Input height={10} marginLeft={3} borderRadius={35} width={390} marginTop="3" variant="outline" backgroundColor={"#e9e9e9"} placeholder="Search..." />
             </Box>
 
             <Text marginTop="3" marginLeft="3" bold>Online Admin</Text>
@@ -124,22 +124,22 @@ const Messages = () => {
                                 alignItems="center"
                                 variant="outline"
                                 marginTop={1}
-                                backgroundColor="#77DD77"
+                                backgroundColor="white"
                                 borderRadius={2}
                                 padding={8}
                                 width={400}
                                 height={120}
                                 shadow={5}>
-                                <Image source={item.image} style={{ width: 80, height: 80, marginRight: 15 }} />
+                                <Image source={item.image} width= '20' height= '20' marginRight= '15' />
                                 <VStack>
-                                    <Text fontSize={16} marginBottom={2} marginRight={10} fontWeight="Bold" color="white">
+                                    <Text fontSize={16} marginBottom={2} marginRight={10} Bold color="black">
                                         {item.userName}
                                     </Text>
-                                    <Text fontSize={12} color="white" marginBottom={0}>
+                                    <Text fontSize={12} color="black" marginBottom={0}>
                                         {item.messageText[0]}
                                     </Text>
                                     <HStack>
-                                        <Text fontSize={12} fontWeight="bold" color="white" marginLeft={200}>
+                                        <Text fontSize={12} bold color="black" marginLeft={200}>
                                             {item.messageTime}
                                         </Text>
                                     </HStack>
