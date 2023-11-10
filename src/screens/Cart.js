@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { View, Image } from 'react-native';
+import { View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { Box, Button, Center, HStack, NativeBaseProvider, ScrollView, Text } from 'native-base';
+import { Box, Button, Center, HStack, NativeBaseProvider, ScrollView, Text, Image } from 'native-base';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Gap from "../components/Gap"
 import { Header } from '../components';
@@ -59,7 +59,7 @@ const CartScreen = () => {
     <NativeBaseProvider>
       <SafeAreaView>
             <Box backgroundColor="#77DD77"
-                borderBottomRadius={35}
+                borderBottomRadius={50}
                 width={420}
                 height={120}
                 shadow={5}
@@ -83,12 +83,12 @@ const CartScreen = () => {
             shadow={5}
             onPress={() => toggleCart(item.id)}
           >
-            <Image source={item.image} style={{ width: 80, height: 80, marginRight: 15 }} />
+            <Image source={item.image} width='20' height='20' marginRight='15' borderRadius={20} />
             <View>
-              <Text fontSize={16} marginBottom={2} fontWeight="Bold" color="black">
+              <Text fontSize={16} marginBottom={2} bold color="black">
                 {item.title}
               </Text>
-              <Text fontSize={12} color="#3DB661" marginBottom={10}>
+              <Text fontSize={12} color="#3DB661" marginBottom={3}>
                 {item.descriptions[0]}
               </Text>
               <Text fontSize={12} fontWeight="bold">
@@ -96,12 +96,12 @@ const CartScreen = () => {
               </Text>
               <HStack space={3} justifyContent={"space-between"}>
                     <Button size={6} backgroundColor={"#3DB661"}>+</Button>
-                    <Text style={{fontSize: 18}}>0</Text>
+                    <Text fontSize= '18'>0</Text>
                     <Button size={6} backgroundColor={"#3DB661"}>-</Button>
                     </HStack>
             </View>
             <Ionicons
-              style={{ marginLeft: 'auto' }}
+              marginLeft= 'auto'
               name={item.cart ? 'ellipse' : 'ellipse-outline'}
               size={28}
               color={item.cart ? '#3DB661' : '#3DB661'}
