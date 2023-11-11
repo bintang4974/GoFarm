@@ -1,4 +1,4 @@
-import { Center, Heading, Text } from 'native-base';
+import { Center, Heading, Text, Image } from 'native-base';
 import React, { useEffect } from 'react';
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -12,7 +12,13 @@ const Splash = ({ navigation }) => {
     return (
         <SafeAreaView style={{ flex: 1 }}>
             <Center flex={1}>
-                <Heading>Go Farm</Heading>
+            <Image
+                    source={require('../../assets/logo.png')}
+                    height={400}
+                    weight={400}
+                    alt='logo'
+                    />
+                    <Heading size={"md"}>Go-Farm Exclusive</Heading>
             </Center>
         </SafeAreaView>
     )

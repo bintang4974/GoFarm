@@ -79,11 +79,6 @@ const Router = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="Notification"
-        component={Notification}
-        options={{ headerShown: false }}
-      />
-      <Stack.Screen
         name="Splash"
         component={Splash}
         options={{ headerShown: false }}
@@ -96,6 +91,11 @@ const Router = () => {
       <Stack.Screen
         name="Register"
         component={Register}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Notification"
+        component={Notification}
         options={{ headerShown: false }}
       />
       <Stack.Screen
@@ -118,7 +118,7 @@ const Router = () => {
         component={RoomChat}
         options={{ headerShown: false }}
       />
-      
+
     </Stack.Navigator>
   )
 }
