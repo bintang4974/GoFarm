@@ -10,7 +10,7 @@ const Banner = () => {
                 resizeMode='cover'
                 style={{ justifyContent: 'center', height: '100%', width: '100px' }}
             >
-                <Text fontSize={28} color={"white"}>Uhuuuyyy</Text>
+                <Text fontSize={28} color={"white"}>Go Farm</Text>
             </ImageBackground>
         </Box>
     )

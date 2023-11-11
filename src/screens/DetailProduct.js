@@ -5,15 +5,15 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { FooterDetail, HeaderDetail } from '../components';
 import { View } from "react-native";
 
-const DetailProduct = ({route}) => {
+const DetailProduct = ({ route, navigation }) => {
   const params = route.params.item
   // const { item } = route.params;
 
   console.log(params)
 
   return (
-    <SafeAreaView style={{flex: 1}}>
-      <HeaderDetail title="Details" />
+    <SafeAreaView style={{ flex: 1 }}>
+      <HeaderDetail title="Details" onPress={() => navigation.navigate('Home')} />
       <Image
         source={{ uri: 'https://spi.or.id/wp-content/uploads/2016/06/IMG_20160430_204305.jpg' }}
         height={250}
@@ -31,13 +31,13 @@ const DetailProduct = ({route}) => {
         </VStack>
         <VStack>
           <VStack>
-            <Heading size={"md"} color={"yellow.600"}>$39.99</Heading>
+            <Heading size={"md"} color={"yellow.600"}>{params.price}</Heading>
             <Text fontSize={12}>150 ml</Text>
           </VStack>
         </VStack>
       </HStack>
       <Box p={3}>
-        <Text bold color={"coolGray.600"}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</Text>
+        <Text bold color={"coolGray.600"}>{params.description}</Text>
       </Box>
       <View style={{ position: 'absolute', left: 0, right: 0, bottom: 0 }}>
         <FooterDetail />

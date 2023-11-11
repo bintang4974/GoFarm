@@ -4,11 +4,11 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { ButtonNotif, CardNotification, Gap, HeaderDetail } from '../components';
 import Ionicons from "@expo/vector-icons/Ionicons";
 
-const Notification = () => {
+const Notification = ({ navigation }) => {
     return (
         <SafeAreaView style={{ flex: 1 }}>
             <Box p={3}>
-                <HeaderDetail title="Notifications" />
+                <HeaderDetail title="Notifications" onPress={() => navigation.navigate('MainApp')} />
                 <Gap height={10} />
                 <HStack>
                     <ButtonNotif title={"Transaksi"} />
