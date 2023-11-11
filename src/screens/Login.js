@@ -1,9 +1,7 @@
-import { View } from 'react-native'
+import { Box, Button, Center, FormControl, HStack, Heading, Input, Link, Text, VStack } from 'native-base'
 import React from 'react'
 
-import { Box, Button, Center, FormControl, HStack, Heading, Input, Link, Text, VStack } from 'native-base'
-
-const Login = () => {
+const Login = ({ navigation }) => {
     return (
         <Center w="100%">
             <Box safeArea p="2" py="8" w="90%" maxW="290">
@@ -34,7 +32,8 @@ const Login = () => {
                             Lupa Sandi?
                         </Link>
                     </FormControl>
-                    <Button mt="2" colorScheme="indigo">
+                    <Button mt="2" colorScheme="indigo"
+                        onPress={() => navigation.navigate('MainApp')}>
                         Masuk
                     </Button>
                     <HStack mt="6" justifyContent="center">
@@ -47,7 +46,7 @@ const Login = () => {
                             color: "indigo.500",
                             fontWeight: "medium",
                             fontSize: "sm"
-                        }} href="#">
+                        }} onPress={() => navigation.navigate('Register')}>
                             Daftar
                         </Link>
                     </HStack>

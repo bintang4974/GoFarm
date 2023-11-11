@@ -7,5 +7,6 @@ import Chat from "./Chat";
 import RoomChat from "./RoomChat"
 import Login from "./Login";
 import Register from "./Register";
+import Splash from "./Splash";
 
-export { Home, Profile, Cart, DetailProduct, Message, Chat, RoomChat, Login, Register  };
+export { Home, Profile, Cart, DetailProduct, Message, Chat, RoomChat, Login, Register, Splash  };
