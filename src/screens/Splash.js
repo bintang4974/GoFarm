@@ -2,7 +2,7 @@ import { Center, Heading, Text } from 'native-base';
 import React, { useEffect } from 'react';
 import { SafeAreaView } from "react-native-safe-area-context";
 
-const Splash = ({navigation}) => {
+const Splash = ({ navigation }) => {
     useEffect(() => {
         setTimeout(() => {
             navigation.replace('Login');
@@ -10,7 +10,7 @@ const Splash = ({navigation}) => {
     }, []);
 
     return (
-        <SafeAreaView style={{flex: 1}}>
+        <SafeAreaView style={{ flex: 1 }}>
             <Center flex={1}>
                 <Heading>Go Farm</Heading>
             </Center>

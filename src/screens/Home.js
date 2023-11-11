@@ -5,7 +5,7 @@ import { Banner, Category, Header, ProductCard } from '../components';
 import dummyProduct from '../data/dummyProduct';
 import { TouchableOpacity } from 'react-native';
 
-const Home = () => {
+const Home = ({navigation}) => {
     const [product, setProduct] = useState(dummyProduct);
     const [category, setCategory] = useState('NONE');
     // const [isActive, setIsActive] = useState(false);
@@ -27,7 +27,7 @@ const Home = () => {
 
     return (
         <SafeAreaView>
-            <Header />
+            <Header onPress={() => navigation.navigate('Notification')} />
             <ScrollView showsVerticalScrollIndicator={false}>
                 <Banner />
                 <Category onPress={onClick("NONE")} />

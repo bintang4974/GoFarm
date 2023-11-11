@@ -15,7 +15,7 @@ const HeaderDetail = ({ title }) => {
                     <Ionicons name='arrow-back-outline' size={28} />
                 </TouchableOpacity>
                 <Heading>{title}</Heading>
-                <Ionicons name='heart-outline' size={28} />
+                <Ionicons name='ellipsis-vertical-circle-outline' size={28} />
             </HStack>
         </Box>
     )
