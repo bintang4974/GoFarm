@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
-import { Cart, Chat, DetailProduct, Home, Message, Profile, RoomChat } from '../screens';
+import { Cart, Chat, DetailProduct, Home, Message, Profile, RoomChat, Login, Register } from '../screens';
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { Text } from 'native-base';
 
@@ -78,6 +78,16 @@ const MainApp = () => {
 const Router = () => {
   return (
     <Stack.Navigator>
+      <Stack.Screen
+        name="Login"
+        component={Login}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Register"
+        component={Register}
+        options={{ headerShown: false }}
+      />
       <Stack.Screen
         name="MainApp"
         component={MainApp}
