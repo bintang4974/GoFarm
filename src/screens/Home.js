@@ -30,33 +30,29 @@ const Home = ({navigation}) => {
             <Header onPress={() => navigation.navigate('Notification')} />
             <ScrollView showsVerticalScrollIndicator={false}>
                 <Banner />
-                <Category onPress={onClick("NONE")} />
-                {/* <Category onPress={onClick("gula")} />
-                <Category onPress={onClick("kakao")} />
-                <Category onPress={onClick("jamur")} />
-                <Category onPress={onClick("empon")} /> */}
-                {/* <HStack p={2} justifyContent={"space-between"} space={4}>
+                {/* <Category onPress={onClick("NONE")} /> */}
+                <HStack p={2} justifyContent={"space-between"} space={4}>
                     <TouchableOpacity onPress={onClick("NONE")}>
-                        <Center backgroundColor={isActive ? "primary.100" : "amber.100"} height={10} p={2} borderRadius={8}>
+                        <Center backgroundColor={"#2C814E"} height={10} p={2} borderRadius={8}>
                             <Text color={"white"}>All</Text>
                         </Center>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={onClick("gula")}>
-                        <Center backgroundColor={isActive ? "#2C814E" : "amber.100"} height={10} p={2} borderRadius={8}>
+                        <Center backgroundColor={"#2C814E"} height={10} p={2} borderRadius={8}>
                             <Text color={"white"}>Gula</Text>
                         </Center>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={onClick("kakao")}>
-                        <Center backgroundColor={isActive ? "primary.100" : "amber.100"} height={10} p={2} borderRadius={8}>
+                        <Center backgroundColor={"#2C814E"} height={10} p={2} borderRadius={8}>
                             <Text color={"white"}>Kakao</Text>
                         </Center>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={onClick("jamur")}>
-                        <Center backgroundColor={isActive ? "primary.100" : "amber.100"} height={10} p={2} borderRadius={8}>
+                        <Center backgroundColor={"#2C814E"} height={10} p={2} borderRadius={8}>
                             <Text color={"white"}>Jamur</Text>
                         </Center>
                     </TouchableOpacity>
-                </HStack> */}
+                </HStack>
                 <HStack flexWrap={'wrap'} justifyContent={'space-between'}>
                     {filteredList.map((item) => {
                         return (
