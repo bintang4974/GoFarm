@@ -11,5 +11,8 @@ import Splash from "./Splash";
 import Notification from "./Notification";
 import EditProfile from "./EditProfile";
 import History from "./History";
+import Checkout from "./Checkout";
+import PaymentCod from "./PaymentCod";
+import PaymentStatus from "./PaymentStatus";
 
-export { Home, Profile, Cart, DetailProduct, EditProfile, History, Message, Chat, RoomChat, Login, Register, Splash, Notification  };
+export { Home, Profile, Cart, DetailProduct, Checkout, PaymentCod, PaymentStatus, EditProfile, History, Message, Chat, RoomChat, Login, Register, Splash, Notification  };
