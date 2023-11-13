@@ -81,11 +81,10 @@ const Messages = () => {
         <SafeAreaView>
             <Box backgroundColor="#77DD77"
                 borderBottomRadius={50}
-                width={420}
                 height={140}
                 shadow={5}>
                 <Text bold fontSize="3xl" color="white" marginLeft="3" marginTop="4">Messages</Text>
-                <Input height={10} marginLeft={3} borderRadius={35} width={390} marginTop="3" variant="outline" backgroundColor={"#e9e9e9"} placeholder="Search..." />
+                <Input height={10} m={2} borderRadius={35} marginTop="3" variant="outline" backgroundColor={"#e9e9e9"} placeholder="Search..." />
             </Box>
 
             <Text marginTop="3" marginLeft="3" bold>Online Admin</Text>
