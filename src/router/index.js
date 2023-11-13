@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
-import { Cart, Chat, DetailProduct, Home, Message, Profile, RoomChat, Login, Register, Splash, Notification, EditProfile, History } from '../screens';
+import { Cart, Chat, DetailProduct, Home, Message, Profile, RoomChat, Login, Register, Splash, Notification, EditProfile, History, Checkout, PaymentStatus, PaymentCod } from '../screens';
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { Text } from 'native-base';
 
@@ -116,6 +116,21 @@ const Router = () => {
       <Stack.Screen
         name="History"
         component={History}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Checkout"
+        component={Checkout}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="PaymentStatus"
+        component={PaymentStatus}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="PaymentCod"
+        component={PaymentCod}
         options={{ headerShown: false }}
       />
 
