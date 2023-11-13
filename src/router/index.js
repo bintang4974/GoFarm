@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
-import { Cart, Chat, DetailProduct, Home, Message, Profile, RoomChat, Login, Register, Splash, Notification } from '../screens';
+import { Cart, Chat, DetailProduct, Home, Message, Profile, RoomChat, Login, Register, Splash, Notification, EditProfile, History } from '../screens';
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { Text } from 'native-base';
 
@@ -114,8 +114,8 @@ const Router = () => {
         options={{ headerShown: false }}
       />
       <Stack.Screen
-        name="RoomChat"
-        component={RoomChat}
+        name="History"
+        component={History}
         options={{ headerShown: false }}
       />
 
