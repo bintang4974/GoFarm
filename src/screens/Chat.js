@@ -17,7 +17,7 @@ const Messages = () => {
             userName: "Bagas Prasetya",
             image: require("../../assets/profile.png"),
             messageTime: "3:41",
-            messageText: ['lagii apa maniess??'],
+            messageText: ['lagii apa kawan?'],
 
         },
 
@@ -26,7 +26,7 @@ const Messages = () => {
             userName: "Pak lek sugeng",
             image: require("../../assets/profile.png"),
             messageTime: "0:48",
-            messageText: ['lagii apa maniess??'],
+            messageText: ['apakah kamu sibuk??'],
 
         },
         {
@@ -34,7 +34,7 @@ const Messages = () => {
             userName: "purnama rajatrakhir",
             image: require("../../assets/profile.png"),
             messageTime: "21:42",
-            messageText: ['lagii apa maniess??'],
+            messageText: ['bagaimana kabarmu??'],
 
         },
         {
@@ -42,7 +42,7 @@ const Messages = () => {
             userName: "Bakul Pentol",
             image: require("../../assets/profile.png"),
             messageTime: "18:37",
-            messageText: ['lagii apa maniess??'],
+            messageText: ['apakah kamu gapapa??'],
 
         },
         {
@@ -50,7 +50,7 @@ const Messages = () => {
             userName: "Gellang",
             image: require("../../assets/profile.png"),
             messageTime: "18:02",
-            messageText: ['lagii apa maniess??'],
+            messageText: ['hari ini mau kemana??'],
 
         },
         {
@@ -58,7 +58,7 @@ const Messages = () => {
             userName: "Bintang",
             image: require("../../assets/profile.png"),
             messageTime: "18:02",
-            messageText: ['lagii apa maniess??'],
+            messageText: ['info dong kak??'],
 
         },
         {
@@ -66,7 +66,7 @@ const Messages = () => {
             userName: "Ipano Roci",
             image: require("../../assets/profile.png"),
             messageTime: "18:02",
-            messageText: ['lagii apa maniess??'],
+            messageText: ['gimana kamu hari ini??'],
 
         },
     ]);
@@ -130,7 +130,7 @@ const Messages = () => {
                                 width={400}
                                 height={120}
                                 shadow={5}>
-                                <Image source={item.image} width= '20' height= '20' marginRight= '15' />
+                                <Image source={item.image} width= '20' height= '20' marginRight= '15' alt='image' />
                                 <VStack>
                                     <Text fontSize={16} marginBottom={2} marginRight={10} Bold color="black">
                                         {item.userName}
