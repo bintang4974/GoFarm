@@ -83,7 +83,7 @@ const CartScreen = () => {
             shadow={5}
             onPress={() => toggleCart(item.id)}
           >
-            <Image source={item.image} width='20' height='20' marginRight='15' borderRadius={20} />
+            <Image source={item.image} width='20' height='20' marginRight='15' borderRadius={20}  alt='image' />
             <View>
               <Text fontSize={16} marginBottom={2} bold color="black">
                 {item.title}
