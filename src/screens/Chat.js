@@ -31,7 +31,7 @@ const Messages = () => {
         },
         {
             id: "3",
-            userName: "purnama rajatrakhir",
+            userName: "jualan bakso",
             image: require("../../assets/profile.png"),
             messageTime: "21:42",
             messageText: ['bagaimana kabarmu??'],
@@ -39,7 +39,7 @@ const Messages = () => {
         },
         {
             id: "4",
-            userName: "Bakul Pentol",
+            userName: "pak agus",
             image: require("../../assets/profile.png"),
             messageTime: "18:37",
             messageText: ['apakah kamu gapapa??'],
