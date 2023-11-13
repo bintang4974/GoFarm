@@ -129,8 +129,18 @@ const Router = () => {
         options={{ headerShown: false }}
       />
       <Stack.Screen
+        name="RoomChat"
+        component={RoomChat}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
         name="PaymentCod"
         component={PaymentCod}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="EditProfile"
+        component={EditProfile}
         options={{ headerShown: false }}
       />
 

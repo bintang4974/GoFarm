@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View } from 'react-native';
+import { TouchableOpacity, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { Box, Button, Center, HStack, NativeBaseProvider, ScrollView, Text, Image } from 'native-base';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -60,7 +60,6 @@ const CartScreen = ({navigation}) => {
       <SafeAreaView>
         <Box backgroundColor="#77DD77"
           borderBottomRadius={50}
-          width={420}
           height={120}
           shadow={5}
           alignItems="center">

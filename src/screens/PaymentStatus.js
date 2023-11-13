@@ -21,7 +21,7 @@ const PaymentStatus = () => {
                     <Heading fontSize={'md'}>0000012345678</Heading>
                 </HStack>
 
-                <Image source={require('../../assets/centang.png')} />
+                <Image source={require('../../assets/centang.png')} alt="image" />
                 <Heading p={5} fontSize={'md'}>Pembayaran dapat melalui Agen / Transfer ATM</Heading>
 
                 <Button onPress={() => navigation.navigate("Checkout")}
