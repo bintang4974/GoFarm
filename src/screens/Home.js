@@ -1,7 +1,7 @@
 import { Button, Center, HStack, ScrollView, Text } from 'native-base';
 import React, { useMemo, useState } from 'react';
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Banner, Category, Header, ProductCard } from '../components';
+import { Banner, Category, Gap, Header, ProductCard } from '../components';
 import dummyProduct from '../data/dummyProduct';
 import { TouchableOpacity } from 'react-native';
 
@@ -23,7 +23,7 @@ const Home = ({navigation}) => {
         // setIsActive(true);
     }
 
-    console.log(product);
+    // console.log(product);
 
     return (
         <SafeAreaView>
@@ -60,6 +60,7 @@ const Home = ({navigation}) => {
                         )
                     })}
                 </HStack>
+                <Gap height={200} />
             </ScrollView>
         </SafeAreaView>
     )

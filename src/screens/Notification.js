@@ -1,10 +1,16 @@
 import { Box, HStack, Heading, Image, ScrollView, Text, VStack } from 'native-base';
-import React from 'react';
+import React, { useState } from 'react';
 import { SafeAreaView } from "react-native-safe-area-context";
 import { ButtonNotif, CardNotification, Gap, HeaderDetail } from '../components';
 import Ionicons from "@expo/vector-icons/Ionicons";
 
 const Notification = ({ navigation }) => {
+    const [background, setBackground] = useState('#55efc4')
+
+    const handleClick = () => {
+        setBackground('#fff')
+    }
+
     return (
         <SafeAreaView style={{ flex: 1 }}>
             <Box p={3}>
@@ -22,6 +28,8 @@ const Notification = ({ navigation }) => {
                 <Heading size={"md"} p={3}>Terbaru</Heading>
                 <ScrollView showsVerticalScrollIndicator={false}>
                     <CardNotification
+                        onPress={handleClick}
+                        background={background}
                         title={"[WAR.11] Dimulai, Serbu Diskon Hebohnya!"}
                         source={'https://img.icons8.com/ios-filled/100/ranners-crossing-finish-line.png'}
                         desc={"Ada Gula semut dengan kualitas terbaik dari kota ini, mulai dari harga yang terjangkau"}

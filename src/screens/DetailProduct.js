@@ -9,7 +9,7 @@ const DetailProduct = ({ route, navigation }) => {
   const params = route.params.item
   // const { item } = route.params;
 
-  console.log(params)
+  // console.log(params)
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
