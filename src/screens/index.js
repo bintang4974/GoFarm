@@ -9,5 +9,7 @@ import Login from "./Login";
 import Register from "./Register";
 import Splash from "./Splash";
 import Notification from "./Notification";
+import EditProfile from "./EditProfile";
+import History from "./History";
 
-export { Home, Profile, Cart, DetailProduct, Message, Chat, RoomChat, Login, Register, Splash, Notification  };
+export { Home, Profile, Cart, DetailProduct, EditProfile, History, Message, Chat, RoomChat, Login, Register, Splash, Notification  };

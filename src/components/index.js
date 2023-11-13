@@ -8,5 +8,6 @@ import HeaderDetail from "./HeaderDetail";
 import FooterDetail from "./FooterDetail";
 import ButtonNotif from "./ButtonNotif";
 import CardNotification from "./CardNotification";
+import HeaderEditprofil from "./HeaderEditprofile";
 
-export { Header, Button, ProductCard, Gap, CardNotification, ButtonNotif, Banner, Category, HeaderDetail, FooterDetail };
+export { Header, Button, ProductCard, Gap, HeaderEditprofil, CardNotification, ButtonNotif, Banner, Category, HeaderDetail, FooterDetail };
